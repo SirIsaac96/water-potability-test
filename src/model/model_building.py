@@ -62,6 +62,7 @@ def main():
         # Paths
         params_path = "params.yaml"
         processed_data_path = "./data/processed/train_processed.csv"
+        model_name = "models/model.pkl"
 
         # Load parameters and processed training data
         n_estimators = load_params(params_path)
@@ -74,7 +75,7 @@ def main():
         model = train_model(x_train, y_train, n_estimators)
 
         # Save the trained model
-        save_model(model, "model.pkl")
+        save_model(model, model_name)
     except Exception as e:
         raise Exception(f"An error occurred: {e}")
    

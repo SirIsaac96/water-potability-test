@@ -82,8 +82,8 @@ def main():
     try:
         # Paths
         test_data_path = "./data/processed/test_processed.csv"
-        model_path = "model.pkl"
-        metrics_path = "metrics.json"
+        model_path = "models/model.pkl"
+        metrics_path = "reports/metrics.json"
 
         # Load test dataset
         test_data = load_data(test_data_path)
